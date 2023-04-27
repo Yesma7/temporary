@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <!--Asignación de Citas-->
+            <div class="col col-lg-12">
+                <form>
+
+                    <div class="row">
+
+                        <div class="col-md-3">
+                            <label for="fecha" class="form-label">Seleccione Fecha:</label>
+                            <input type="date" name="fecha" class="form-control">
+
+                            <label for="paciente" class="form-label">Paciente</label>
+                            <input type="text" name="pacienteSearch" class="form-control">
+                            <select name="paciente" size="5" aria-label="size 5 select" class="form-select">
+                                <option value="Paciente 1">Paciente 1</option>
+                            </select>
+
+                            <div class="form-group mt-4">
+                                <button class="btn btn-info">Asignar</button>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <label for="hora" class="form-label">Seleccione Hora:</label>
+                            <select class="form-select" size="8" aria-label="size 8 select">
+                                <option value="1" class="btn btn-outline-info">María del Pilar Pérez Urieta- 08:00 am
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+
+        <hr class="border border-primary border-3 opacity-75">
+
+        <div class="row">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="img/LogoDemo.png" alt="LogoMain">
+                </div>
+                <div class="col-md-4">
+                    <div class="list-group">
+                        <h5 class="list-group-item border border-0">Dra. María del Pilar Pérez Urieta
+                            <div class="d-flex w-100 justify-content-between">
+                                <p class="mb-1">NIT: 1098657377-7 <br>
+                                    Dirección: Calle 55 # 23a - 60 <br>
+                                    Tel: 3185509512 <br>
+                                    Girón - Santander </p>
+                            </div>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <form>
+
+                    <div class="row border border-dark mb-5">
+                        <div class="col mt-2">
+                            <div class="input-group mb-2">
+                                <span class="input-group-text fw-bold border border-0">Paciente:</span>
+                                <input type="text" placeholder="Paciente" class="form-control border border-0" readonly>
+                            </div>
+
+                            <div class="input-group mb-2">
+                                <span class="input-group-text fw-bold border border-0">Sexo:</span>
+                                <input type="text" placeholder="Sexo" class="form-control border border-0" readonly>
+                                <span class="input-group-text fw-bold border border-0">Fecha Nacimiento:</span>
+                                <input type="text" placeholder="Fecha" class="form-control border border-0" readonly>
+                                <span class="input-group-text fw-bold border border-0">Edad:</span>
+                                <input type="text" placeholder="Edad" class="form-control border border-0" readonly>
+                            </div>
+
+                            <div class="input-group mb-2">
+                                <span class="input-group-text fw-bold border border-0">Estado Civil:</span>
+                                <input type="text" placeholder="Estado Civil" class="form-control border border-0">
+                            </div>
+
+                            <div class="input-group mb-2">
+                                <span class="input-group-text fw-bold border border-0">Teléfono:</span>
+                                <input type="text" placeholder="Teléfono" class="form-control border border-0">
+                            </div>
+
+                            <div class="input-group mb-2">
+                                <span class="input-group-text fw-bold border border-0">Acompañante:</span>
+                                <input type="text" placeholder="Acompañante" class="form-control border border-0">
+                            </div>
+                        </div>
+
+                        <div class="col mt-2">
+                            <div class="input-group mb-2">
+                                <span class="input-group-text fw-bold border border-0">Tipo ID:</span>
+                                <input type="text" placeholder="Tipo ID" class="form-control border border-0" readonly>
+                                <span class="input-group-text fw-bold border border-0">Número:</span>
+                                <input type="text" placeholder="Número" class="form-control border border-0" readonly>
+                            </div>
+
+                            <div class="input-group mb-2">
+                                <span class="input-group-text fw-bold border border-0">Ocupación:</span>
+                                <input type="text" placeholder="Ocupación" class="form-control border border-0">
+                            </div>
+
+                            <div class="input-group mb-2">
+                                <span class="input-group-text fw-bold border border-0">Dirección:</span>
+                                <input type="text" placeholder="Dirección" class="form-control border border-0">
+                            </div>
+
+                            <div class="input-group mb-2">
+                                <span class="input-group-text fw-bold border border-0">EPS:</span>
+                                <input type="text" placeholder="EPS" class="form-control border border-0">
+                            </div>
+
+                            <div class="input-group mb-2">
+                                <span class="input-group-text fw-bold border border-0">Tel Acompañante:</span>
+                                <input type="text" placeholder="Tel Acompañante" class="form-control border border-0">
+
+                                <span class="input-group-text fw-bold border border-0">Parentesco:</span>
+                                <input type="text" placeholder="Parentesco" class="form-control border border-0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row border border-dark mb-5">
+                        <h3 class="text-center text-uppercase">Historia Clínica de Psicología</h3>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Fecha:</span>
+                                    <input type="text" placeholder="Fecha" class="form-control border border-0"
+                                        readonly>
+                                    <span class="input-group-text fw-bold border border-0">Hora:</span>
+                                    <input type="text" placeholder="Hora" class="form-control border border-0" readonly>
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Código CUPS:</span>
+                                    <input type="text" placeholder="Código CUPS" class="form-control border border-0">
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Profesional:</span>
+                                    <input type="text" placeholder="Profesional" class="form-control border border-0"
+                                        readonly>
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Nombre CUPS:</span>
+                                    <input type="text" placeholder="Nombre CUPS" class="form-control border border-0">
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Unidad:</span>
+                                    <input type="text" placeholder="Unidad" class="form-control border border-0">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="border border-start border-end mt-2 mb-2">
+                            <h4 class="text-center text-uppercase">Información general</h4>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">EPS:</span>
+                                    <input type="text" placeholder="EPS" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Acompañante:</span>
+                                    <input type="text" placeholder="Acompañante" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Teléfono:</span>
+                                    <input type="text" placeholder="Teléfono" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Parentesco:</span>
+                                    <input type="text" placeholder="Parentesco" class="form-control border border-0">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border border-start border-end mt-2 mb-2">
+                            <h4 class="text-center text-uppercase">Modalidad</h4>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Modalidad:</span>
+                                    <input type="text" placeholder="Modalidad" class="form-control border border-0">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border border-start border-end mt-2 mb-2">
+                            <h4 class="text-center text-uppercase">Motivo de Consulta</h4>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Motivo de Consulta:</span>
+                                    <textarea class="form-control border border-0" placeholder="Motivo de consulta"></textarea>
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Enfermedad Actual:</span>
+                                    <textarea class="form-control border border-0" placeholder="Enfermedad Actual"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border border-start border-end mt-2 mb-2">
+                            <h4 class="text-center text-uppercase">Antecedentes</h4>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Laborales:</span>
+                                    <input type="text" placeholder="Laborales" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Hospitalarias:</span>
+                                    <input type="text" placeholder="Hospitalarias" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Patológicos:</span>
+                                    <input type="text" placeholder="Patológicos" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">ITS:</span>
+                                    <input type="text" placeholder="ITS" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Tóxico-Alérgicos:</span>
+                                    <input type="text" placeholder="Tóxico-Alérgicos" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Fuma:</span>
+                                    <input type="text" placeholder="Fuma" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Alcohol:</span>
+                                    <input type="text" placeholder="Alcohol" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Medicamentos:</span>
+                                    <input type="text" placeholder="Medicamentos" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Psicofármacos:</span>
+                                    <input type="text" placeholder="Patológicos" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Alergias:</span>
+                                    <input type="text" placeholder="Alergias" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Quirúrgicos:</span>
+                                    <input type="text" placeholder="Quirúrgicos" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Traumáticos:</span>
+                                    <input type="text" placeholder="Traumáticos" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">FUR:</span>
+                                    <input type="text" placeholder="FUR" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Menarquia:</span>
+                                    <input type="text" placeholder="Menarquia" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Gestaciones:</span>
+                                    <input type="text" placeholder="Gestaciones" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Partos:</span>
+                                    <input type="text" placeholder="Partos" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Cesáreas:</span>
+                                    <input type="text" placeholder="Cesáreas" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Abortos:</span>
+                                    <input type="text" placeholder="Abortos" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Vivos:</span>
+                                    <input type="text" placeholder="Vivos" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Hábitos:</span>
+                                    <input type="text" placeholder="Hábitos" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Estilo de vida:</span>
+                                    <input type="text" placeholder="Estilo de vida" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Otros Antecedentes:</span>
+                                    <input type="text" placeholder="Otros Antecedentes" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Cardiovasculares:</span>
+                                    <input type="text" placeholder="Cardiovasculares" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Congénitos:</span>
+                                    <input type="text" placeholder="Congénitos" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Infecciosos:</span>
+                                    <input type="text" placeholder="Infecciosos" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Oncológicos:</span>
+                                    <input type="text" placeholder="Oncológicos" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Farmacodependencia:</span>
+                                    <input type="text" placeholder="Farmacodependencia" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Psiquiátricos:</span>
+                                    <input type="text" placeholder="Psiquiátricos" class="form-control border border-0">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="border border-start border-end mt-2 mb-2">
+                            <h4 class="text-center text-uppercase">Información Familiar</h4>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Conoce DX:</span>
+                                    <input type="text" placeholder="Conoce DX" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Número de Hijos:</span>
+                                    <input type="text" placeholder="Número de Hijos" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Profesión:</span>
+                                    <input type="text" placeholder="Profesión" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Ocupación:</span>
+                                    <input type="text" placeholder="Ocupación" class="form-control border border-0">
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text fw-bold border border-0">Red de Apoyo:</span>
+                                    <input type="text" placeholder="Red de Apoyo" class="form-control border border-0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="img/LogoDemo.png" alt="LogoMain">
+                </div>
+                <div class="col-md-4">
+                    <div class="list-group">
+                        <h5 class="list-group-item border border-0">Dra. María del Pilar Pérez Urieta
+                            <div class="d-flex w-100 justify-content-between">
+                                <p class="mb-1">NIT: 1098657377-7 <br>
+                                    Dirección: Calle 55 # 23a - 60 <br>
+                                    Tel: 3185509512 <br>
+                                    Girón - Santander </p>
+                            </div>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <form>
+                    <div class="row border border-dark mb-5">
+                        <div class="col mt-2">
+                            <div class="input-group mb-2">
+                                <span class="input-group-text fw-bold border border-0">Paciente:</span>
+                                <input type="text" placeholder="Paciente" class="form-control border border-0" readonly>
+                            </div>
+
+                            <div class="input-group mb-2">
+                                <span class="input-group-text fw-bold border border-0">Sexo:</span>
+                                <input type="text" placeholder="Sexo" class="form-control border border-0" readonly>
+                                <span class="input-group-text fw-bold border border-0">Fecha Nacimiento:</span>
+                                <input type="text" placeholder="Fecha" class="form-control border border-0" readonly>
+                                <span class="input-group-text fw-bold border border-0">Edad:</span>
+                                <input type="text" placeholder="Edad" class="form-control border border-0" readonly>
+                            </div>
+
+                            <div class="input-group mb-2">
+                                <span class="input-group-text fw-bold border border-0">Estado Civil:</span>
+                                <input type="text" placeholder="Estado Civil" class="form-control border border-0">
+                            </div>
+
+                            <div class="input-group mb-2">
+                                <span class="input-group-text fw-bold border border-0">Teléfono:</span>
+                                <input type="text" placeholder="Teléfono" class="form-control border border-0">
+                            </div>
+
+                            <div class="input-group mb-2">
+                                <span class="input-group-text fw-bold border border-0">Acompañante:</span>
+                                <input type="text" placeholder="Acompañante" class="form-control border border-0">
+                            </div>
+                        </div>
+
+                        <div class="col mt-2">
+                            <div class="input-group mb-2">
+                                <span class="input-group-text fw-bold border border-0">Tipo ID:</span>
+                                <input type="text" placeholder="Tipo ID" class="form-control border border-0" readonly>
+                                <span class="input-group-text fw-bold border border-0">Número:</span>
+                                <input type="text" placeholder="Número" class="form-control border border-0" readonly>
+                            </div>
+
+                            <div class="input-group mb-2">
+                                <span class="input-group-text fw-bold border border-0">Ocupación:</span>
+                                <input type="text" placeholder="Ocupación" class="form-control border border-0">
+                            </div>
+
+                            <div class="input-group mb-2">
+                                <span class="input-group-text fw-bold border border-0">Dirección:</span>
+                                <input type="text" placeholder="Dirección" class="form-control border border-0">
+                            </div>
+
+                            <div class="input-group mb-2">
+                                <span class="input-group-text fw-bold border border-0">EPS:</span>
+                                <input type="text" placeholder="EPS" class="form-control border border-0">
+                            </div>
+
+                            <div class="input-group mb-2">
+                                <span class="input-group-text fw-bold border border-0">Tel Acompañante:</span>
+                                <input type="text" placeholder="Tel Acompañante" class="form-control border border-0">
+
+                                <span class="input-group-text fw-bold border border-0">Parentesco:</span>
+                                <input type="text" placeholder="Parentesco" class="form-control border border-0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row border border-dark mb-5">
+                        <div class="border border-start border-end mb-2">
+                            <h4 class="text-center text-uppercase">Áreas Afectadas</h4>
+                        </div>
+
+                        <div class="col">
+                            <div class="input-group mb-2">
+                                <span class="input-group-text fw-bold border border-0">Personal:</span>
+                                <textarea class="form-control border border-0" placeholder="Personal"></textarea>
+                            </div>
+
+                            <div class="input-group mb-2">
+                                <span class="input-group-text fw-bold border border-0">Familiar:</span>
+                                <textarea class="form-control border border-0" placeholder="Familiar"></textarea>
+                            </div>
+
+                            <div class="input-group mb-2">
+                                <span class="input-group-text fw-bold border border-0">Social-Económica:</span>
+                                <input type="text" placeholder="Social-Económica" class="form-control border border-0">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
